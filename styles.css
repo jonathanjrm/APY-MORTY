@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacion {
+  padding: 10px;
+  text-align: right;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.logo:hover {
+  color: #f0f0f0;
+}
+
+.logo svg {
+  margin-right: 10px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.caja {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.caja a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.caja-naranja {
+  border: 1px solid orange;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.caja-naranja a {
+  color: black;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.caja-naranja:hover {
+  background-color: orange;
+}
+
+.alinear-vertical {
+  line-height: 40px;
+}
+
+.contenido {
+  padding-top: 2px;
+}
+
+.seccion2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem 0;
+  background: rgb(39, 43, 51);
+  min-height: 50vh;
+}
+
+.contenedorcajas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 1200px;
+}
+
+.cajas {
+  width: 600px;
+  height: 220px;
+  display: flex;
+  margin: 10px;
+  background: rgb(60, 62, 68);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.img {
+  flex: 1;
+  border-radius: 0.5rem 0 0 0.5rem;
+  overflow: hidden;
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.texto {
+  flex: 1;
+  padding: 1rem;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.ancla {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.estado {
+  font-weight: bold;
+}
+
+.ubicacion a,
+.section a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.ubicacion,
+.section,
+.primaria {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.text-gray {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.text-gray a {
+  font-size: 3rem;
+}
+
+.estado {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.estado .span1 {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-right: 0.375rem;
+  background: rgb(85, 204, 68);
+  border-radius: 50%;
+}
+
+.seccion1 {
+  text-align: center;
+  padding: 4.5rem 0;
+}
+
+.nombre {
+  margin: auto;
+  color: black;
+  border: none;
+  font-weight: 900;
+  z-index: 1;
+  font-size: 7rem;
+  text-align: center;
+}
+
+/* Footer */
+
+.pie {
+  background: rgb(32, 35, 41);
+  height: 380px;
+}
+
+ul {
+  list-style: none;
+  padding: 4.5rem;
+  padding-bottom: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  padding: 10px;
+  margin: 0 5px;
+  color: rgb(158, 158, 158);
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li:first-child {
+  margin-left: 20px;
+}
+
+li:last-child {
+  margin-right: 20px;
+}
+
+li:hover {
+  color: orange;
+}
+
+.primariaa {
+  text-align: center;
+}
+
+.estadoo {
+  color: rgb(158, 158, 158); /* Cambia el color del texto a blanco */
+}
+
+.estadoo a:hover {
+  color: orange;
+}
+
+.estadoo a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.estadoo .spann1 {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-right: 0.375rem;
+  background: rgb(85, 204, 68);
+  border-radius: 50%;
+}
+
+.anclass svg {
+  margin: 30px 20px;
+}
+
+.anclass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes {
+  padding: 0;
+}
+
+.final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.final span {
+  margin: 0 3px;
+  color: rgb(158, 158, 158);
+  font-weight: bold;
+}
+
+.final a {
+  text-decoration: none;
+  color: orange;
+}
